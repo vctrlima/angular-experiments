@@ -1,0 +1,24 @@
+.viewContainer {
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+    align-items: center;
+
+    background-color: #1e1e1e;
+
+    .views {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+        gap: 10rem;
+
+        max-width: 48rem;
+
+        > div {
+            > h1 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
