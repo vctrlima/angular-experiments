@@ -1,0 +1,18 @@
+<ul>
+    <ng-container *ngFor="let item of items">
+        <li>
+            <input
+                type="text"
+                [(ngModel)]="item.text"
+                (ngModelOptions)="({ standalone: true })"
+                (ngModelChange)="setShareableData()"
+            />
+        </li>
+    </ng-container>
+
+    <li>
+        <button type="button" (click)="addNewItem(); setShareableData()">
+            +
+        </button>
+    </li>
+</ul>
