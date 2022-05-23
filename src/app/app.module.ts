@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router'
 import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app.routes'
 import { ShareItemsService } from './core/share-items.service'
-import { HomeModule } from './modules/home/home.module'
+import { HomeModule } from './features/home/home.module'
 
 @NgModule({
     declarations: [AppComponent],
@@ -20,4 +20,4 @@ import { HomeModule } from './modules/home/home.module'
     bootstrap: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule {}
+export class AppModule { }
